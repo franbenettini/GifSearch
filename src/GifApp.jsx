@@ -1,9 +1,7 @@
 import React from "react";
 import { SearchGif } from "./components/SearchGif/SearchGif";
 
-
-import './scss/base/_GifApp.scss';
-
+import "./_GifApp.scss"
 
 const GifApp = () => {
   return (

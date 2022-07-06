@@ -1,3 +1,4 @@
+import "./_GifItem.scss"
 
 export const GifItem = ({title, url}) => {
   

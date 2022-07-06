@@ -1,0 +1,79 @@
+.gifGrid{
+    h3{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+    .buttonCategory{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 4rem;
+        row-gap: 1.5rem;
+
+        .buttonRemove {
+            font-size: 20px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 13px 50px 13px;
+            outline: 0;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+        }
+              
+        .buttonRemove::after {
+            content: "";
+            background-color: #ffe54c;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: 7px;
+            transition: 0.2s;
+        }
+              
+        .buttonRemove:hover::after {
+            top: 0px;
+            left: 0px;
+        }
+        
+
+       
+        .buttonHide {
+                font-size: 20px;
+                font-weight: 200;
+                letter-spacing: 1px;
+                padding: 13px 50px 13px;
+                outline: 0;
+                border: 1px solid black;
+                cursor: pointer;
+                position: relative;
+                background-color: rgba(0, 0, 0, 0);
+              }
+              
+            .buttonHide::after {
+                content: "";
+                background-color: #dcbaff;
+                width: 100%;
+                z-index: -1;
+                position: absolute;
+                height: 100%;
+                top: 7px;
+                left: 7px;
+            }
+        
+    }
+    .cardGrid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin:0 10rem;
+    }
+}

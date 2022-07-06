@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import "./_AddCategory.scss"
 
 export const AddCategory = ({ addCategory }) => {
 
@@ -19,7 +20,7 @@ export const AddCategory = ({ addCategory }) => {
 
   return (
     <form onSubmit={handleSubmit} >
-        <input 
+        <input className='inputGif' 
             type='text'
             placeholder='Buscar Gif'
             value={inputValue}

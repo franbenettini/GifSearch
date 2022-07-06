@@ -2,7 +2,7 @@ import {useState } from "react";
 import { AddCategory } from "../AddCategory/AddCategory";
 import { GifGrid } from "../GiftGrid/GifGrid";
 
-
+import "./_SearchGif.scss"
 
 
 export const SearchGif = () => {
@@ -25,13 +25,16 @@ export const SearchGif = () => {
 
 
     return (
-      <div>
+      <div className="searchGif">
         {/* Titulo */}
         <h1>GifApp</h1>
   
         {/* Input */}
-        <AddCategory addCategory={handleAddCategory} />
-        <button onClick={()=> clearSearch()}>Limpiear Busquedas</button>
+        <div className="inputButton">
+          <AddCategory addCategory={handleAddCategory} />
+          <button className="buttonCleanAll"  onClick={()=> clearSearch()}>Limpiear Busquedas</button>
+        </div>
+        
         {/* Listado de Gif */}
   
         {

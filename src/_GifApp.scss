@@ -1,0 +1,30 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+*,*::before::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #7B7E73;
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
