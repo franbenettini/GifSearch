@@ -3,7 +3,7 @@ import { useFetchGif } from "../../hooks/useFetchGif";
 import { GifItem } from "../GifItem/GifItem";
 import PropType from "prop-types"
 
-//import "./_GiftGrid.scss"
+import "./_GiftGrid.scss"
 
 
 export const GifGrid = ({ category, removeCategory, index}) => {

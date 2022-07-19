@@ -1,4 +1,4 @@
-//import "./_GifItem.scss"
+import "./_GifItem.scss"
 import PropTypes from 'prop-types'
 
 export const GifItem = ({title, url}) => {

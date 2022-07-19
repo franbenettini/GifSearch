@@ -1,4 +1,4 @@
-import { render,screen } from "react-dom"
+import { render,screen } from "@testing-library/react"
 import { GifGrid } from "../../src/components/GiftGrid/GifGrid"
 import { useFetchGif } from "../../src/hooks/useFetchGif";
 
@@ -37,4 +37,11 @@ describe ('Test en <GifGrid/>', () => {
         expect(screen.getAllByRole('img').length).toBe(2)
 
     });
+
+    
+    /* test('Probar el Hide de categoria', () => {
+
+        const button
+    
+    }) */
 })

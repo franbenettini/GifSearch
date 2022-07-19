@@ -6,12 +6,12 @@ describe('Test en hook useFetchGifs', () => {
 
     test('should first', () => {
 
-    const {result} = renderHook (() => useFetchGif('One Punch'))
+        const {result} = renderHook (() => useFetchGif('One Punch'))
 
-    const { imagenes, loading } = result.current;
+        const { imagenes, loading } = result.current;
 
-    expect( imagenes.length).toBe(0);
-    expect( loading ).toBeTruthy();
+        expect( imagenes.length).toBe(0);
+        expect( loading ).toBeTruthy();
 
     });
 
@@ -27,7 +27,6 @@ describe('Test en hook useFetchGifs', () => {
 
         expect(imagenes.length).toBeGreaterThan(0);
         expect(loading).toBeFalsy();
-
-        
+  
     })
 });

@@ -1,7 +1,6 @@
 import { render,screen,fireEvent } from "@testing-library/react"
 import { AddCategory } from "../../src/components/AddCategory/AddCategory";
 
-import "../../src/components/GiftGrid/_AddCategory.scss"
 
 describe ('Test en <AddCategory/>', () =>{
 
